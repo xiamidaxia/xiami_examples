@@ -1,0 +1,28 @@
+{
+  "name": "xiami_examples",
+  "version": "0.0.0",
+  "description": "xiami examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiamidaxia/xiami_examples.git"
+  },
+  "keywords": [
+    "xiami",
+    "xpm",
+    "meteor"
+  ],
+  "author": "xiamidaxia (xiamidaxia@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiamidaxia/xiami_examples/issues"
+  },
+  "homepage": "https://github.com/xiamidaxia/xiami_examples",
+  "dependencies": {
+    "underscore": "^1.6.0",
+    "xiami": "0.0.2"
+  }
+}

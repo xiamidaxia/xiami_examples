@@ -1,0 +1,81 @@
+/********************************
+*
+*   @author liuwencheng
+*   @author 14-3-19
+*    .button
+*    .button-black
+*
+**********************************/
+@import "../config"
+
+/**
+ * button reset
+ */
+button-reset()
+    fn-box(true)
+    cursor pointer
+    text-decoration none
+button
+.button
+.button-bar-button
+    button-reset()
+    &:disabled
+        button-disable()
+.button
+    border-radius 6px
+    padding 10px 40px
+    font-size 16px
+    &:active
+        position relative
+        top 1px
+        border 1px solid #ccc
+a.button
+a.button:hover
+    text-decoration none
+
+/**
+ * button main style
+ */
+.button-main
+    color white
+    background-color $main-color
+    border 1px solid $main-color
+/*    &:focus
+        //border 1px solid #0036ff
+        border: 1px solid red;*/
+.button-bar
+    display table
+    table-layout fixed
+    white-space nowrap
+    margin 0
+    padding 0
+.button-bar-item
+    display table-cell
+    width auto
+    border-radius 0
+    &:disabled
+        fn-disable()
+    &:first-child
+        border-top-left-radius 4px
+        border-bottom-left-radius 4px
+        > .button-bar-button
+            border-right none
+    &:last-child
+        border-top-left-radius 4px
+        border-bottom-left-radius 4px
+        > .button-bar-button
+            border-left none
+    .button-bar-button
+        border-radius inherit
+    .button-bar-button
+        z-index 1
+    > input
+        position absolute
+        overflow hidden
+        padding 0
+        border 0
+        opacity 0.001
+        z-index 1
+        vertical-align top
+        outline none
+

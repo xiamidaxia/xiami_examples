@@ -1,0 +1,74 @@
+/**
+ * stylus function
+ *
+ * @author by liuwencheng
+ * @date 2013-3-19
+ */
+
+//disable
+fn-disable()
+    opacity 0.3
+    cursor default
+    pointer-events none
+//用于input和button等
+fn-box($isButton=false)
+    fn-reset()
+    box-sizing border-box
+    background-clip padding-box
+    vertical-align top
+    //user-select none
+    display inline-block
+    position relative
+    if $isButton
+        text-overflow ellipsis
+        white-space nowrap
+        overflow hidden
+        user-select none //wp8下给input加会有问题
+fn-reset()
+    padding 0
+    margin 0
+    border none
+    outline none
+    font inherit
+    color inherit
+    background transparent
+    cursor default
+fn-pos($isPos = true)
+    position absolute if $isPos
+    position fixed if not $isPos
+    left 0
+    top 0
+fn-rmb()
+    &:before
+        content "￥"
+        font-family 'Arial Normal','Arial'
+fn-yahei()
+    font-family 'Microsoft YaHei','SimHei'
+fn-arrow($size = 5px, $color = $grey-5)
+    position relative
+    &:after
+        content ""
+        position absolute
+        display block
+        width 0
+        height @width
+        border $size solid transparent
+        border-width $size $size 0 $size
+        border-top-color $color
+        transition all .3s ease
+// 上划线
+fn-topline($color = #E94E5D, $height = 2px, $border = 1px)
+    position relative
+    &:before
+        content ""
+        position absolute
+        top 0 - $height
+        left 0 - $border
+        width 100%
+        height $height
+        background-color $color
+        border $border solid $color
+        border-width 0 $border
+fn-trans($time=0.3s)
+    transition all $time ease
+
