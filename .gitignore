@@ -2,6 +2,7 @@
 .idea
 *.pyc
 *.swp
-node_modules
 npm-debug.log
-dest
+node_modules/
+test/
+dest/

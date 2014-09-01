@@ -1,18 +1,29 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>xiami-examples</title>
-    <script src="/static/xpm.js"></script>
-    <script>
-        xpm.config({
-            src: "/static"
-        })
-        xpm.use("meteor/standard-app-packages", function(){
-            xpm.use('client/main')
-        })
-    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<!--[if lt IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<div class="container"></div>
+<script src="/static/xpm.js"></script>
+<script src="/static/xpm_map.js"></script>
+<script>
+    xpm.config({
+        src: "/static"
+    })
+    xpm.use('client/main')
+</script>
 </body>
 </html>
+

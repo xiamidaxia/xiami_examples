@@ -1,5 +1,5 @@
 Package.server({
-    imports: "common",
-    files: "*",
+    imports: ["common","all/collections", "meteor/standard-app-packages"],
+    files: "**/*",
     test_files: "test/**/*"
 })

@@ -9,8 +9,7 @@ xiami.Fiber(function() {
     var app = xiami.serverCreate({family:family})
     //add your config
     app.require('xiami/config').init(config)
-    //add meteor standard packages
-    app.require('meteor/standard-app-packages')
+    //run your main file
     app.require('server/main')
     //run webapp
     app.require('xiami/webapp').run()

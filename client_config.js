@@ -10,5 +10,7 @@ module.exports = {
     family: allFamilies,
     add: ["xiami/*", "meteor/*", "client/*", "all/*", "server/*"],
     dest: __dirname + "/dest",
+    static_url: "/static",
+    production: false,
     watch: true
 }
