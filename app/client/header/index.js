@@ -1,8 +1,8 @@
-var app = angular.module('header', [])
-app.controller('headerCtrl', function($scope, $location, $route, security, breadcrumbs, notifications){
-    $scope.location = $location
-    $scope.breadcrumbs = breadcrumbs
+var header = angular.module('header', [])
+header.controller('headerCtrl', function($scope){
+    console.log('header ctrl')
+    //$scope.location = $location
+    //$scope.breadcrumbs = breadcrumbs
 
-    $scope.isAuthenticated = security.isAuthenticated
-
+    //$scope.isAuthenticated = security.isAuthenticated
 })

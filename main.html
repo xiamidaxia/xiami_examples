@@ -15,7 +15,11 @@
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
-<div class="container"></div>
+<div ng-controller="appCtrl">
+    <div ng-include="'client/header/index.angular'"></div>
+    <div ng-view class="container-fluid"></div>
+    <div id="mocha" style="position:relative"></div>
+</div>
 <script src="/static/xpm.js"></script>
 <script src="/static/xpm_map.js"></script>
 <script>

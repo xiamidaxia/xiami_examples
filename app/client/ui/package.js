@@ -1,5 +1,8 @@
 Package.client({
-    files: ["**/*"],
     imports: [],
-    all_preload: true
+    files: [
+        "^**/*",
+        "transition/transition.js",
+        "index.js"
+    ]
 })

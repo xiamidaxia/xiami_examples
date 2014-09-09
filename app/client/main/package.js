@@ -1,7 +1,7 @@
 Package.client({
     imports: [
-        "ui"
+        "ui",
+        'header'
     ],
-    files: ["**/*","^index_backup.js"],
-    main_preload: true
+    files: ["^index_backup.js"]
 })
